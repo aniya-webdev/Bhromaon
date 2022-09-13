@@ -16,9 +16,9 @@ const paths = {
 		dest: 'dist/'
 	},
 	styles: {
-		src: 'src/styles/*.scss',
+		src: 'src/styles/*.+(scss|css|min.css)',
 		dest: 'dist/css/',
-		watch: 'src/styles/**/*.scss'
+		watch: 'src/styles/**/*.(scss|css|min.css)'
 	},
 	scripts: {
 		src: 'src/scripts/**/*.js',

@@ -1,8 +1,8 @@
 /* Base */ 
 
 body {
-	font-family: sans-serif;
-	color: #000000;
+	font-family: 'Josefin Sans', sans-serif;
+	color: $general;
 }
 
 /* Grid styles */
@@ -10,8 +10,8 @@ body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
 }
 
 /* Utility */

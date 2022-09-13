@@ -12,8 +12,12 @@
 		<meta name="keywords" content="ключевые слова, фразы" />
 
 		<!-- Styles -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./css/media.css" />
 
 		<!-- Open Graph -->
 		<!-- <meta property="og:url" content="https://.ru/" /> -->
@@ -34,7 +38,31 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-		
-
+		<header class="header">
+			<div class="header__middle">
+				<h1 class="header__title">Bhromaon</h1>
+				<p class="header__subtitle">Safe Travel Anywhere</p>
+				<form action="#" class="form header__form">
+					<label for="" class="header__search">
+						<input type="text" placeholder="Search Your Travel Destination">
+					</label>
+					<button class="header__btn">Search</button>	
+				</form>
+				
+				<a class="scroll-down" href="#about">Scroll Down</a>
+			</div>
+			<div class="header__nav">
+				<nav class="nav">
+					<a href="index.html" class="logo">Bhromaon</a>
+					<ul>
+						<li><a class="nav__link" href="#">Who We Are</a></li>
+						<li><a class="nav__link" href="#">What We Do</a></li>
+						<li><a class="nav__link" href="#">Travel With Us</a></li>
+						<li><a class="nav__link" href="#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+		</header>
 	</body>
 </html>
