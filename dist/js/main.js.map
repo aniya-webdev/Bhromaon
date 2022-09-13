@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["class people {\r\n\tsayhi() {\r\n\t\tconsole.log(\"Hi\")\r\n\t}\r\n}\r\nlet b = new people()\r\nb.sayhi()\r\nlet a = \"Hello\"\r\nconsole.log(a)"],"file":"main.js"}
