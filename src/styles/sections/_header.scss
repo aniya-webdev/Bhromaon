@@ -1,0 +1,28 @@
+/* Header */
+.header {
+	padding-top: 265px;
+	background: url('./../img/header.jpg') no-repeat;
+	background-size: cover;
+}
+
+.header__middle {
+	margin: 0 auto;
+	width: 653px;
+	color: $white;
+	text-align: center;
+}
+
+.header__title {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 48px;
+	letter-spacing: 4.8px;
+	text-transform: uppercase;
+}
+
+.header__subtitle {
+	margin-bottom: 48px;
+	font-weight: 400;
+	font-size: 22px;
+	letter-spacing: 6.82px;
+}

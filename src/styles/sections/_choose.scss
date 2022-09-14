@@ -1,0 +1,41 @@
+/* Section Why choose us */
+
+.choose {
+	padding-top: 212px;
+	padding-bottom: 131px;
+
+	background-image: url('./../img/choose.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.choose__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.choose__info {
+	width: 560px;
+
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	p + p {
+		margin-top: 32px;
+	}
+
+	p:last-of-type {
+		margin-bottom: 45px;
+	}
+}
+
+.choose__gallery {
+	width: 440px;
+
+	img + img {
+		margin-top: 10px;
+		margin-left: auto;
+	}
+}

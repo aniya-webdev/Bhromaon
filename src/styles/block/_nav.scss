@@ -1,0 +1,40 @@
+/* Navigation */
+
+.nav {
+	width: 1121px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	ul {
+		display: flex;
+
+		li:not(:last-child) {
+			margin-right: 36px;
+		}
+	}	
+}
+
+.nav__link {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $white;
+	transition: 0.3s linear;
+
+	&:hover {
+		text-shadow: 0 0 5px $white;
+		border-bottom: 1px solid $white;
+	}
+}
+
+.header__nav {
+	background: $blue;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 132px;
+}

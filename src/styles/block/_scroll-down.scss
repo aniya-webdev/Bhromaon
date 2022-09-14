@@ -1,0 +1,29 @@
+/* Scroll down */
+
+.scroll-down {
+	position: relative;
+	display: inline-block;
+	height: 46px;
+
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 2.8px;
+	color: $white;
+	text-decoration: none;
+	transition: 0.3s linear;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 17px;
+		height: 11px;
+		bottom: 10px;
+		right: 46px;
+		background-image: url('../img/icons/arrow.svg');
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		text-shadow: 0 0 8px $white;
+	}
+}

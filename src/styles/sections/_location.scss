@@ -1,0 +1,60 @@
+/* Section Location */
+
+.location__content {
+	padding-top: 226px;
+	padding-bottom: 99px;
+
+	&--landscape, &--hotel {
+		height: 700px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&--hotel {
+		background-image: url('./../img/GrandSpainMadrid-1.jpg');
+	}
+
+	&--landscape {
+		background-image: url('./../img/GrandSpainMadrid-2.jpg');
+		
+		& .location__card {
+			margin-left: auto; 
+			margin-right: 0;
+		}
+	}
+}
+
+.location__card {
+	width: 543px;
+	padding: 50px 32px;
+	background: $dark-bg;
+	opacity: 0.9;
+
+	h4 {
+		margin-bottom: 23px;
+		font-weight: 400;
+		font-size: 20px;
+		letter-spacing: 1.5px;
+	}
+
+	h3 {
+		margin-bottom: 13px;
+		font-weight: 400;
+		font-size: 20px;
+		color: $white;
+	}
+
+	p + p {
+		margin-top: 20px;
+	}
+
+	p:last-of-type {
+		margin-bottom: 46px;
+	}
+}
+
+.location__button {
+	width: 228px;
+	position: relative;
+}

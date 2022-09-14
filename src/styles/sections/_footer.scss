@@ -1,0 +1,39 @@
+/* Footer */
+
+.footer {
+	padding-top: 120px;
+	padding-bottom: 53px;
+	background-color: $dark-bg;
+	text-align: center;
+
+	.logo {
+		margin-bottom: 16px;
+		letter-spacing: 3.36px;
+	}
+
+	p {
+		margin-bottom: 20px;
+		font-weight: 400;
+		font-size: 16px;
+		letter-spacing: 1.6px;
+		color: $white;
+	}
+}
+
+.footer__social {
+	margin: 0 auto;
+	width: 166px;
+	display: grid;
+	grid-auto-flow: column;
+
+	a {
+		color: $general;
+		transition: 0.3s linear;
+		font-size: 16px;
+
+
+		&:hover, &:focus {
+			color: $blue;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+/* Section Step */
+
+.step {
+	padding-top: 80px;
+	padding-bottom: 87px;
+}
+
+.step__plan {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+	.step__item + .step__item {
+		margin-left: 160px;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		width: 777px;
+		height: 99px;
+
+		background-image: url('../img/icons/shape.svg');
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 1;
+		top: -40px;
+		left: 165px;
+	}
+}
+
+.step__item {
+	z-index: 2;
+	text-align: center;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 26px;
+
+	& > * + * {
+		margin-top: 20px;
+	}
+	
+}
+
+.step__icon {
+	margin: 0 auto;
+	width: 99px;
+	height: 99px;
+	background: $dark-gray;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		position: relative;
+		display: block;
+		width: 62px;
+		height: 63px;
+	}
+
+	.icon-search {
+		width: 57px;
+		height: 57px;
+		fill: $blue;
+	}
+
+	.icon-select {
+		fill: $red;
+	}
+
+	.icon-like {
+		fill: $light-blue;
+	}
+
+}
+

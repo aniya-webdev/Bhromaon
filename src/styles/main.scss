@@ -5,10 +5,24 @@
 @import "base/base";
 
 // Blocks
+@import "block/button";
+@import "block/form";
+@import "block/nav";
+@import "block/logo";
+@import "block/scroll-down";
+@import "block/section-general";
 
-@import "block/header";
-@import "block/main";
-@import "block/footer";
+
+//Sections
+@import "sections/header";
+@import "sections/main";
+@import "sections/choose";
+@import "sections/step";
+@import "sections/location";
+@import "sections/feedbacks";
+
+@import "sections/footer";
+
 
 
 

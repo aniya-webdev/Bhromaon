@@ -1,0 +1,71 @@
+/* Button */
+
+.button {
+	position: relative;
+	width: 228px;
+	padding: 21px 40px;
+	display: block;
+
+	background: #5474FD;
+	border: 2px solid $blue;
+	
+	font-family: 'Aleo';
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: $white;
+	text-decoration: none;
+	text-align: center;
+
+	transition: 0.3s linear;
+
+	span {
+		position: relative;
+	}
+	&::before {
+		content: '';
+		display: block;
+		width: 109px;
+		height: 60px;
+		clip-path: polygon(0 0, 55% 0, 100% 100%, 0% 100%);
+		background: #496BFE;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	
+	&:hover {
+		box-shadow: 0 0 5px $white;
+	}
+}
+
+.header__button {
+	position: relative;
+	border: 2px solid #FFFFFF;
+	padding-left: 30px;
+    padding-right: 53px;
+	text-align: left;
+	
+	&:after {
+		position: absolute;
+		content: '';
+		width: 22px;
+		height: 24px;
+		top: 18px;
+		right: 16px;
+		background-image: url('../img/icons/search.svg');
+		background-repeat: no-repeat;
+	}
+
+	&::before {
+		display: none;
+	}
+
+	&:hover {
+		box-shadow: 0 0 5px $white;
+		background: $light-blue;
+	}
+}
