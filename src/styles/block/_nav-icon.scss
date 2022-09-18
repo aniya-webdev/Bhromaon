@@ -1,0 +1,105 @@
+// Ширина и высота линии в иконке
+$lineWidth: 20px;
+$lineHeight: 3px;
+$radius: 2px;
+$lineMargin: 4px;
+$color: $blue;
+
+// Размеры контейнера
+// $width: $lineWidth;
+// $height: $lineHeight * 3 + $lineMargin * 2;
+
+$width: 40px;
+$height: 40px;
+
+.nav-icon {
+	display: none;
+	
+	// Mobile
+	@media (max-width: 899px) {
+		position: absolute;
+		top: 7px;
+		right: 15px;
+		width: $width;
+		height: $height;
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		background-color: $white;
+		border-radius: 50%;
+		border: none;
+	
+		transition: background-color 0.2s ease-in;
+		cursor: pointer;
+	
+		&:hover {
+			background-color: $light-blue;
+	
+			.nav-icon__middle,
+			.nav-icon__middle::before,
+			.nav-icon__middle::after {
+				background-color: $white;
+			}
+		}
+	
+		&:focus {
+			outline: none;
+		}
+		
+	}
+
+	// Mobile XS-319
+	@media (max-width: 280px) {
+		display: none;
+	}
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    background-color: $color;
+    border-radius: $radius;
+    transition: background-color 0.2s ease-in;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        background-color: $color;
+        border-radius: $radius;
+        transition: background-color 0.2s ease-in;
+    }
+
+    &::before {
+        top: -($lineHeight + $lineMargin);
+    }
+
+    &::after {
+        top: $lineHeight + $lineMargin;
+    }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

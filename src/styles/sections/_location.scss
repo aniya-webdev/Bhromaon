@@ -21,7 +21,25 @@
 		& .location__card {
 			margin-left: auto; 
 			margin-right: 0;
+
+			// Mobile XS
+			@media (max-width: 599px) {
+				margin-left: unset;
+			}
 		}
+	}
+
+	// Tablet
+	@media (max-width: 1199px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	// Mobile
+	@media (max-width: 899px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		height: auto;
 	}
 }
 
@@ -52,9 +70,23 @@
 	p:last-of-type {
 		margin-bottom: 46px;
 	}
-}
 
-.location__button {
-	width: 228px;
-	position: relative;
+	// Mobile
+	@media (max-width: 899px) {
+		padding: 30px 32px;
+		font-size: 14px;
+
+		h3 h3{
+			font-size: 18px;
+		}
+	}
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		width: auto;
+
+		.button {
+			width: auto;
+		}
+	}
 }

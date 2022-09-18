@@ -23,7 +23,8 @@
 	span {
 		position: relative;
 	}
-	&::before {
+
+	.main &::before {
 		content: '';
 		display: block;
 		width: 109px;
@@ -35,37 +36,12 @@
 		top: 0;
 		left: 0;
 	}
-	
-	
 	&:hover {
 		box-shadow: 0 0 5px $white;
 	}
-}
 
-.header__button {
-	position: relative;
-	border: 2px solid #FFFFFF;
-	padding-left: 30px;
-    padding-right: 53px;
-	text-align: left;
-	
-	&:after {
-		position: absolute;
-		content: '';
-		width: 22px;
-		height: 24px;
-		top: 18px;
-		right: 16px;
-		background-image: url('../img/icons/search.svg');
-		background-repeat: no-repeat;
-	}
-
-	&::before {
-		display: none;
-	}
-
-	&:hover {
-		box-shadow: 0 0 5px $white;
-		background: $light-blue;
+	// Mobile XS
+	@media (max-width: 599px) {
+		width: auto;
 	}
 }

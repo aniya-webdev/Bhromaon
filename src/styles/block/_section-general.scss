@@ -5,10 +5,26 @@
 	font-weight: 400;
 	font-size: 36px;
 	color: $white;
+
+	// Mobile
+	@media (max-width: 899px) {
+		font-size: 28px;
+	}
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		font-size: 24px;
+	}
 }
+
 .section__text {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 1.6px;
+
+	// Mobile
+	@media (max-width: 899px) {
+		font-size: 14px;
+	}
 }

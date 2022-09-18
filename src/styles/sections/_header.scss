@@ -1,16 +1,34 @@
 /* Header */
 .header {
 	padding-top: 265px;
-	background: url('./../img/header.jpg') no-repeat;
+
+	display: grid;
+	justify-content: center;
+
+	background: url('./../img/mountain.jpg') no-repeat;
 	background-size: cover;
+
+	// Tablet
+	@media (max-width: 1199px) {
+		padding-top: 0;
+
+		& .container {
+			order: 2;
+		}
+	}
 }
 
 .header__middle {
-	margin: 0 auto;
 	width: 653px;
 	color: $white;
 	text-align: center;
-}
+
+	// Tablet
+	@media (max-width: 1199px) {
+		width: auto;
+	}
+
+} 
 
 .header__title {
 	margin-bottom: 10px;
@@ -18,6 +36,11 @@
 	font-size: 48px;
 	letter-spacing: 4.8px;
 	text-transform: uppercase;
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		font-size: 36px;
+	}
 }
 
 .header__subtitle {
@@ -25,4 +48,104 @@
 	font-weight: 400;
 	font-size: 22px;
 	letter-spacing: 6.82px;
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		font-size: 18px;
+	}
+}
+
+/* Form */
+
+.form {
+	margin-bottom: 108px;
+	display: grid;
+	grid-template-columns: 1fr 150px;
+	justify-content: center;
+	transition: 0.3s linear;
+	&:hover {
+		box-shadow: 0 0 5px $white;
+	}
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, auto);
+	}
+}
+
+.form__search-input {
+	border: 2px solid $white;
+	width: 100%;
+	padding: 17px;
+	
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 2.8px;
+
+	transition: 0.3s linear;
+	outline: 0;
+	
+	&:placeholder-shown {
+		color: $gray;
+	}
+
+	&:focus {
+		box-shadow: 0 0 5px $white;
+		border: 2px solid $light-blue;
+	}
+
+	// Mobile
+	@media (max-width: 899px) {
+		padding: 19px 20px;
+	}
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		padding: 19px 10px;
+		width: 100%;
+		letter-spacing: 1.5px;
+	}
+}
+
+.form__search-button {
+	width: auto;
+	padding-left: 34px;
+    padding-right: 53px;
+	
+	position: relative;
+	border: 2px solid #FFFFFF;
+	text-align: left;
+
+	transition: 0.3s linear;
+	outline: 0;
+
+	span {
+		
+		&:after {
+			position: absolute;
+			content: '';
+			width: 22px;
+			height: 24px;
+			top: -6px;
+			right: -30px;
+			background-image: url('../img/icons/search.svg');
+			background-repeat: no-repeat;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0 0 5px $white;
+		background: $light-blue;
+	}
+
+	&:focus {
+		border: 2px solid $light-blue;
+	}
+
+	// Mobile XS
+	@media (max-width: 599px) {
+		text-align: center;
+	}
 }

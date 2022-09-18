@@ -1,4 +1,7 @@
-/* Base */ 
+/* Base */
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Josefin Sans', sans-serif;
@@ -12,6 +15,20 @@ body {
 	margin: 0 auto;
 	padding-left: 45px;
 	padding-right: 45px;
+
+	// Tablet
+	@media (max-width: 1199px) {
+		width: 900px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	// Mobile
+	@media (max-width: 899px) {
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 /* Utility */

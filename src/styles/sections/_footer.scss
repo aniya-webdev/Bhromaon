@@ -18,13 +18,30 @@
 		letter-spacing: 1.6px;
 		color: $white;
 	}
+
+	// Tablet
+	@media (max-width: 1199px) {
+		padding-top: 100px;
+	}
+
+	// Mobile
+	@media (max-width: 899px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 
 .footer__social {
 	margin: 0 auto;
-	width: 166px;
 	display: grid;
+	gap: 10px;
 	grid-auto-flow: column;
+	justify-content: center;
+
+	// Tablet
+	@media (max-width: 1199px) {
+		gap: 30px;
+	}
 
 	a {
 		color: $general;
@@ -34,6 +51,12 @@
 
 		&:hover, &:focus {
 			color: $blue;
+		}
+
+		// Tablet
+		@media (max-width: 1199px) {
+			font-size: 30px;
+
 		}
 	}
 }

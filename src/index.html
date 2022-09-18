@@ -39,32 +39,40 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__middle">
-				<h1 class="header__title">Bhromaon</h1>
-				<p class="header__subtitle">Safe Travel Anywhere</p>
-				<form action="#" class="form header__form">
-					<label for="" class="header__search">
-						<input type="text" placeholder="Search Your Travel Destination">
-					</label>
-					<button class="header__button button" type="submit">Search</button>
-				</form>
-				
-				<a class="scroll-down" href="#about">Scroll Down</a>
+			<div class="container">
+				<div class="header__middle">
+					<h1 class="header__title">Bhromaon</h1>
+					<p class="header__subtitle">Safe Travel Anywhere</p>
+					<form class="form" action="#">
+						<input class="form__search-input" 
+								name="search"
+								id="search"
+								type="text"
+								placeholder="Search Your Travel Destination">
+						<button class="form__search-button button" type="submit"><span>Search</span></button>
+					</form>
+					
+					<a href="#choose" class="scroll-down" href="#about">Scroll Down</a>
+				</div>
 			</div>
+			<!-- /.container -->
 			<div class="header__nav">
-				<nav class="nav">
-					<a href="index.html" class="logo">Bhromaon</a>
-					<ul>
-						<li><a class="nav__link" href="#">Who We Are</a></li>
-						<li><a class="nav__link" href="#">What We Do</a></li>
-						<li><a class="nav__link" href="#">Travel With Us</a></li>
-						<li><a class="nav__link" href="#">Contact Us</a></li>
+				<button class="nav-icon">
+					<div class="nav-icon__middle"></div>
+				</button>
+				<nav class="nav container">
+					<a class="logo" href="index.html">Bhromaon</a>
+					<ul class="nav__list">
+						<li><a href="#">Who We Are</a></li>
+						<li><a href="#">What We Do</a></li>
+						<li><a href="#">Travel With Us</a></li>
+						<li><a href="#">Contact Us</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div>				
 		</header>
 		<main class="main">
-			<section class="choose">
+			<section class="choose" id="choose">
 				<div class="container choose__content">
 					<div class="choose__info">
 						<h2 class="section__title">Why Choose Us</h2>
@@ -74,7 +82,7 @@
 					</div>
 					<div class="choose__gallery">
 						<img src="./img/choose-img1.jpg" alt="Домик на берегу водоема">
-						<img src="./img/choose-img2.jpg" alt="Красота горных склонов">
+						<img src="./img/mountain.jpg" alt="Красота горных склонов">
 					</div>
 				
 				</div>
@@ -120,7 +128,7 @@
 							<h4>Spain</h4>
 							<h3>Grand Spain Madrid</h3>
 							<p class="section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							<a href="#" class="button location__button"><span>Book now</span></a>
+							<a href="#" class="button"><span>Book now</span></a>
 						</div>
 					</div>
 					
@@ -131,7 +139,7 @@
 							<h4>Spain</h4>
 							<h3>Grand Spain Madrid</h3>
 							<p class="section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							<a href="#" class="button location__button"><span>Book now</span></a>
+							<a href="#" class="button"><span>Book now</span></a>
 						</div>
 					</div>
 				</div><!-- /.location__content -->
@@ -173,6 +181,6 @@
 			</div>
 		</footer>
 
-
+		<script src="js/main.js"></script>
 	</body>
 </html>
