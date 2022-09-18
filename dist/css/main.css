@@ -421,9 +421,6 @@ body {
 .header {
   padding-top: 265px;
   display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background: url("./../img/mountain.jpg") no-repeat;
   background-size: cover;
 }
@@ -439,6 +436,7 @@ body {
 }
 
 .header__middle {
+  margin: 0 auto;
   width: 653px;
   color: #fff;
   text-align: center;

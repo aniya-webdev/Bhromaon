@@ -3,15 +3,13 @@
 	padding-top: 265px;
 
 	display: grid;
-	justify-content: center;
-
 	background: url('./../img/mountain.jpg') no-repeat;
 	background-size: cover;
-
+	
 	// Tablet
 	@media (max-width: 1199px) {
 		padding-top: 0;
-
+		
 		& .container {
 			order: 2;
 		}
@@ -19,6 +17,7 @@
 }
 
 .header__middle {
+	margin: 0 auto;
 	width: 653px;
 	color: $white;
 	text-align: center;
