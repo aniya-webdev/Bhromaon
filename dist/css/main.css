@@ -132,7 +132,7 @@ body {
 .button {
   position: relative;
   width: 228px;
-  padding: 21px 40px;
+  padding: 20px;
   display: block;
   background: #5474FD;
   border: 2px solid #5474FD;
@@ -556,7 +556,7 @@ body {
 .form__search-button {
   width: auto;
   padding-left: 34px;
-  padding-right: 53px;
+  padding-right: 34px;
   position: relative;
   border: 2px solid #FFFFFF;
   text-align: left;
