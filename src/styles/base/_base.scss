@@ -15,14 +15,14 @@ body {
 /* Grid styles */
 
 .container {
-	width: 1200px;
+	width: 1110px;
 	margin: 0 auto;
 	padding-left: 45px;
 	padding-right: 45px;
 
 	// Tablet
 	@media (max-width: 1199px) {
-		width: 900px;
+		width: 840px;
 		padding-left: 30px;
 		padding-right: 30px;
 	}

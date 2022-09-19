@@ -87,14 +87,14 @@ body {
 
 /* Grid styles */
 .container {
-  width: 1200px;
+  width: 1110px;
   margin: 0 auto;
   padding-left: 45px;
   padding-right: 45px;
 }
 @media (max-width: 1199px) {
   .container {
-    width: 900px;
+    width: 840px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -919,7 +919,7 @@ body {
 
 .feedbacks__comment {
   display: grid;
-  grid-template-columns: 441px 665px;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: auto;
 }
 .feedbacks__comment img {
