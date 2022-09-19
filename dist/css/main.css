@@ -72,10 +72,6 @@ legend {
 }
 
 /* Base */
-* {
-  border: 1px solid red;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -615,7 +611,6 @@ body {
     padding-bottom: 50px;
   }
 }
-
 .choose__content {
   display: grid;
   grid-template-columns: 560px 440px;
@@ -750,6 +745,14 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 26px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.step__item:hover svg {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 @media (max-width: 1199px) {
   .step__item {
@@ -791,6 +794,9 @@ body {
   display: block;
   width: 62px;
   height: 63px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 .step__icon .icon-search {
   width: 57px;

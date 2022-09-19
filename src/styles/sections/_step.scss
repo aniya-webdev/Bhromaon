@@ -65,6 +65,14 @@
 	font-size: 36px;
 	line-height: 26px;
 
+	transition: 0.3s linear;
+
+	&:hover {
+		svg{
+			transform: scale(1.5)
+	
+		}
+	}
 	
 	// Tablet
 	@media (max-width: 1199px) {
@@ -91,12 +99,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	
+	
 	svg {
 		position: relative;
 		display: block;
 		width: 62px;
 		height: 63px;
+		transition: 0.3s linear;
 	}
 
 	.icon-search {
