@@ -829,8 +829,7 @@ body {
 .location__card {
   width: 543px;
   padding: 50px 32px;
-  background: #232323;
-  opacity: 0.9;
+  background: rgba(51, 51, 51, 0.9);
 }
 .location__card h4 {
   margin-bottom: 23px;
