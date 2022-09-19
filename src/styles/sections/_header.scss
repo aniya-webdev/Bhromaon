@@ -5,14 +5,20 @@
 	display: grid;
 	background: url('./../img/mountain.jpg') no-repeat;
 	background-size: cover;
-	
+		
 	// Tablet
 	@media (max-width: 1199px) {
 		padding-top: 0;
+		padding-bottom: 100px;
 		
 		& .container {
 			order: 2;
 		}
+	}
+
+	// Mobile
+	@media (max-width: 899px) {
+		padding-bottom: 50px;
 	}
 }
 
@@ -56,8 +62,16 @@
 
 /* Form */
 
-.form {
+.header__form {
 	margin-bottom: 108px;
+
+	// Mobile
+	@media (max-width: 899px) {
+		margin-bottom: 80px;
+	}
+}
+
+.form {
 	display: grid;
 	grid-template-columns: 1fr 150px;
 	justify-content: center;
