@@ -72,6 +72,10 @@ legend {
 }
 
 /* Base */
+* {
+  border: 1px solid red;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -83,14 +87,14 @@ body {
 
 /* Grid styles */
 .container {
-  width: 1200px;
+  width: 1110px;
   margin: 0 auto;
   padding-left: 45px;
   padding-right: 45px;
 }
 @media (max-width: 1199px) {
   .container {
-    width: 900px;
+    width: 840px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -128,7 +132,7 @@ body {
 .button {
   position: relative;
   width: 228px;
-  padding: 21px 40px;
+  padding: 20px;
   display: block;
   background: #5474FD;
   border: 2px solid #5474FD;
@@ -171,11 +175,10 @@ body {
 
 /* Navigation */
 .header__nav {
-  width: 100vw;
+  background: #5474FD;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 132px;
-  background: #5474FD;
 }
 @media (max-width: 1199px) {
   .header__nav {
@@ -189,6 +192,7 @@ body {
 }
 @media (max-width: 899px) {
   .header__nav {
+    margin-bottom: 120px;
     padding: 15px;
   }
 }
@@ -427,11 +431,17 @@ body {
 @media (max-width: 1199px) {
   .header {
     padding-top: 0;
+    padding-bottom: 100px;
   }
   .header .container {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+}
+@media (max-width: 899px) {
+  .header {
+    padding-bottom: 50px;
   }
 }
 
@@ -473,8 +483,16 @@ body {
 }
 
 /* Form */
-.form {
+.header__form {
   margin-bottom: 108px;
+}
+@media (max-width: 899px) {
+  .header__form {
+    margin-bottom: 80px;
+  }
+}
+
+.form {
   display: grid;
   grid-template-columns: 1fr 150px;
   -webkit-box-pack: center;
@@ -538,7 +556,7 @@ body {
 .form__search-button {
   width: auto;
   padding-left: 34px;
-  padding-right: 53px;
+  padding-right: 34px;
   position: relative;
   border: 2px solid #FFFFFF;
   text-align: left;
@@ -697,7 +715,7 @@ body {
   position: absolute;
   z-index: 1;
   top: -40px;
-  left: 165px;
+  left: 117px;
   background-image: url("../img/icons/shape.svg");
   background-repeat: no-repeat;
 }
@@ -901,7 +919,7 @@ body {
 
 .feedbacks__comment {
   display: grid;
-  grid-template-columns: 445px 668px;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: auto;
 }
 .feedbacks__comment img {
@@ -1022,5 +1040,27 @@ body {
   .footer__social a {
     font-size: 30px;
   }
+}
+
+/* Animation */
+@-webkit-keyframes scroll-down {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+.scroll-down:after {
+  -webkit-animation: scroll-down 0.7s linear 0.1s infinite alternate;
+  animation: scroll-down 0.7s linear 0.1s infinite alternate;
 }
 /*# sourceMappingURL=main.css.map */
