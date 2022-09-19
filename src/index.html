@@ -17,6 +17,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./libs/AOS/aos.css">
 		<link rel="stylesheet" href="./css/main.css" />
 
 		<!-- Open Graph -->
@@ -42,9 +43,9 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__middle">
-					<h1 class="header__title">Bhromaon</h1>
-					<p class="header__subtitle">Safe Travel Anywhere</p>
-					<form class="form header__form" action="#">
+					<h1 class="header__title" data-aos="fade-down">Bhromaon</h1>
+					<p class="header__subtitle" data-aos="fade-up">Safe Travel Anywhere</p>
+					<form class="form header__form data-aos="zoom-in"" action="#">
 						<input class="form__search-input" 
 								name="search"
 								id="search"
@@ -63,8 +64,8 @@
 							<div class="nav-icon__middle"></div>
 						</button>
 						<nav class="nav ">
-							<a class="logo" href="index.html">Bhromaon</a>
-							<ul class="nav__list">
+							<a class="logo" href="index.html" data-aos="fade-right">Bhromaon</a>
+							<ul class="nav__list" data-aos="fade-left">
 								<li><a href="#">Who We Are</a></li>
 								<li><a href="#">What We Do</a></li>
 								<li><a href="#">Travel With Us</a></li>
@@ -82,7 +83,7 @@
 				<section class="choose" id="choose">
 					<div class="choose__content">
 						<div class="choose__info">
-							<h2 class="section__title">Why Choose Us</h2>
+							<h2 class="section__title" data-aos="fade-up">Why Choose Us</h2>
 							<p class="section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 							<p class="section__text">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 							<a href="#" class="button"><span>Explore Places</span></a>
@@ -130,7 +131,7 @@
 				<!-- /.step -->
 				<section class="location">
 					<div class="location__content location__content--hotel">
-						<div class="location__card">
+						<div class="location__card" data-aos="fade-right">
 							<h4>Spain</h4>
 							<h3>Grand Spain Madrid</h3>
 							<p class="section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -139,7 +140,7 @@
 						
 					</div><!-- /.location__content -->
 					<div class="location__content location__content--landscape">
-						<div class="location__card">
+						<div class="location__card" data-aos="fade-left">
 							<h4>Spain</h4>
 							<h3>Grand Spain Madrid</h3>
 							<p class="section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -149,7 +150,7 @@
 				</section>
 				<!-- /.location -->
 				<section class="feedbacks">
-					<h2 class="section__title feedbacks__title">What Our  Tourist Say</h2>
+					<h2 class="section__title feedbacks__title" data-aos="fade-up">What Our  Tourist Say</h2>
 					<div class="feedbacks__comment">
 							<img src="./img/feedback-clients.jpg" alt="Фотография Sam Sumon">
 							<div class="feedbacks__content">
@@ -168,10 +169,21 @@
 			<!-- /.container -->
 
 		</main>
+
 		<footer class="footer">
-			<a href="index.html" class="logo">Bhromaon</a>
-			<p>Safe Travel Anywhere</p>
-			<div class="footer__social">
+			<a href="index.html" class="logo" 
+				data-aos="zoom-in-down"
+				data-aos-anchor-placement="top-bottom">
+				Bhromaon
+			</a>
+			<p 
+				data-aos="zoom-in-down"
+				data-aos-anchor-placement="top-bottom">
+				Safe Travel Anywhere
+			</p>
+			<div class="footer__social" 
+				data-aos="zoom-down"
+				data-aos-anchor-placement="top-bottom">
 				<a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i>
 				</a>
 				<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i>
@@ -184,7 +196,9 @@
 				</a>
 			</div>
 		</footer>
-
+		<script src="libs/AOS/aos.js"></script>
 		<script src="js/main.js"></script>
+		<script>AOS.init();</script>
+
 	</body>
 </html>

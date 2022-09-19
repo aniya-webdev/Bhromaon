@@ -715,7 +715,7 @@ body {
   position: absolute;
   z-index: 1;
   top: -40px;
-  left: 165px;
+  left: 117px;
   background-image: url("../img/icons/shape.svg");
   background-repeat: no-repeat;
 }
@@ -1040,5 +1040,27 @@ body {
   .footer__social a {
     font-size: 30px;
   }
+}
+
+/* Animation */
+@-webkit-keyframes scroll-down {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+.scroll-down:after {
+  -webkit-animation: scroll-down 0.7s linear 0.1s infinite alternate;
+  animation: scroll-down 0.7s linear 0.1s infinite alternate;
 }
 /*# sourceMappingURL=main.css.map */
