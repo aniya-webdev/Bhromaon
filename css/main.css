@@ -160,7 +160,7 @@ body {
   clip-path: polygon(0 0, 55% 0, 100% 100%, 0% 100%);
   background: #496bfe;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
 }
 .button:hover {
