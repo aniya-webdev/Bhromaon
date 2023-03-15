@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="./css/main.css">
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="https://aniya-webdev.github.io/Bhromaon/index.html">
+	<meta property="og:type" content="https://aniya-webdev.github.io/">
 	<meta
 		property="og:title"
 		content=" Bhromaon. Проект для портфолио верстальщика сайтов"
@@ -110,33 +110,35 @@
 
 		<div class="header__nav">
 			<div class="container">
-				<button class="nav-icon">
-					<span class="nav-icon__middle"></span>
-				</button>
-				<a
-					class="logo"
-					href="index.html"
-					data-aos="fade-right"
-					data-aos-anchor="#search"
-					data-aos-duration="2000"
-					data-aos-once="true"
-				>
-					Bhromaon
-				</a>
-				<nav class="nav">
-					<ul
-						class="nav__list"
-						data-aos="fade-left"
+				<div class="nav__wrap">
+					<a
+						class="logo header__logo"
+						href="index.html"
+						data-aos="fade-right"
 						data-aos-anchor="#search"
 						data-aos-duration="2000"
 						data-aos-once="true"
 					>
-						<li><a href="#choose">Who We Are</a></li>
-						<li><a href="#location">What We Do</a></li>
-						<li><a href="#feedbacks">Travel With Us</a></li>
-						<li><a href="#footer">Contact Us</a></li>
-					</ul>
-				</nav>
+						Bhromaon
+					</a>
+					<button class="nav-icon">
+						<span class="nav-icon__middle"></span>
+					</button>
+					<nav class="nav">
+						<ul class="nav__list"
+							data-aos="fade-left"
+							data-aos-anchor="#search"
+							data-aos-duration="2000"
+							data-aos-once="true"
+						>
+							<li><a href="#choose">Who We Are</a></li>
+							<li><a href="#location">What We Do</a></li>
+							<li><a href="#feedbacks">Travel With Us</a></li>
+							<li><a href="#footer">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.nav__wrap -->
 			</div>
 			<!-- /.container -->
 		</div>
@@ -279,12 +281,6 @@
 		</section>
 		<!-- /.feedbacks -->
 	</main>
-	<section class="to-top">
-		<a href="#header"
-			><i class="fa fa-chevron-circle-up" aria-hidden="true"></i
-		></a>
-	</section>
-	<!-- /.to-top -->
 
 	<footer class="footer container" id="footer">
 		<a
@@ -320,6 +316,13 @@
 			</a>
 		</div>
 	</footer>
+	
+	<section class="to-top">
+		<a href="#header"
+			><i class="fa fa-chevron-circle-up" aria-hidden="true"></i
+		></a>
+	</section>
+	<!-- /.to-top -->
 
 	<script src="libs/AOS/aos.js"></script>
 	<script src="js/main.js"></script>
