@@ -19,18 +19,26 @@ navLinks.forEach(function (item, index) {
 	});
 
 	item.addEventListener('keydown', function (event) {
-		if (event.key === 'Tab' && !event.shiftKey && nav.classList.contains('nav--active')) {
-		  event.preventDefault();
-		  const nextIndex = index === navLinks.length - 1 ? 0 : index + 1;
-		  navLinks[nextIndex].focus();
+		if (nav.classList.contains('nav--active') && event.keyCode === 9) {
+			if (event.shiftKey) {
+				if (index === 0) {
+					event.preventDefault();
+					navIcon.focus();
+				}
+			} else {
+				if (index === navLinks.length - 1) {
+					event.preventDefault();
+					navIcon.focus();
+				}
+			}
 		}
 	});
 });
 
 navIcon.addEventListener('keydown', function (event) {
-	if (event.key === 'Tab' && event.shiftKey && document.activeElement === navIcon) {
+	if (nav.classList.contains('nav--active') && event.keyCode === 9) {
 		event.preventDefault();
-		navLinks[navLinks.length - 1].focus();
+		navLinks[0].focus();
 	}
 });
 
@@ -41,6 +49,5 @@ document.addEventListener('keydown', function (event) {
 		logo.classList.remove('header__logo--active');
 	}
 });
-
 
 //# sourceMappingURL=main.js.map
