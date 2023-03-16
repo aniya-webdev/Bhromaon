@@ -132,7 +132,7 @@ body {
   transition: 0.5s linear;
 }
 .logo:hover {
-  font-size: 24.5px;
+  transform: scale(1.1);
   text-shadow: 0 0 5px #fff;
 }
 .logo:focus {
@@ -450,11 +450,11 @@ body {
   background-repeat: no-repeat;
 }
 .scroll-down:hover {
-  font-size: 14.5px;
+  transform: scale(1.1);
   text-shadow: 0 0 18px #fff;
 }
 .scroll-down:focus {
-  font-size: 14.5px;
+  transform: scale(1.1);
   text-shadow: 0 0 30px #fff;
 }
 
